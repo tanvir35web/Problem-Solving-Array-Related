@@ -1,4 +1,4 @@
-// Find last item of every arrays using comma operator must.
+// Find last item of every arrays.
 
 // const array = [[1,5,8,6],[5,2,9],[0,4],[1]];
 
@@ -49,15 +49,33 @@
 // }
 
 
-const array = [[1, 5, 8, 6], [5, 2, 9], [0, 4], [1], [0, 9]];
+// const array = [[1, 5, 8, 6], [5, 2, 9], [0, 4], [1], [0, 9]];
+
+// for (let i = 0; i < array.length; i++) {
+//   // Check if the subarray is not empty before accessing its last element
+//   if (array[i].length > 0) {
+//     const lastIndex = array[i].length - 1;
+//     const lastElement = array[i][lastIndex];
+//     console.log(`array[${i}][${lastIndex}] = ${lastElement}`);
+//   }
+// }
+
+
+
+// Find first item of every arrays.
+
+
+const array = [[1, 5, 8, 6], [5, 2, 9], [0, 4], [1], [0, 9],[77,0,99],[2.3,9]];
 
 for (let i = 0; i < array.length; i++) {
-  // Check if the subarray is not empty before accessing its last element
+  
   if (array[i].length > 0) {
-    const lastIndex = array[i].length - 1;
-    const lastElement = array[i][lastIndex];
-    console.log(`array[${i}][${lastIndex}] = ${lastElement}`);
+    const firstElements = array[i][0]
+        console.log(firstElements);
+
+    }
+   
   }
-}
+
 
 
