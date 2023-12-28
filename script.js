@@ -77,16 +77,34 @@
    
 //   }
 
-// Sum of the array each array's first and last elements
+// // Sum of the array each array's first and last elements
+
+// const array = [[1, 5, 8, 6, 8], [5, 2, 9], [8, 4], [5], [0, 0, 1]];
+
+// for(let i=0; i < array.length ; i++){
+
+//     if(array[i].length > 1) {
+//         const firstElement = array[i][0];
+//         const lastElement = array[i][[array[i].length - 1]]
+
+//         console.log(`${firstElement} + ${lastElement} = ` + (firstElement + lastElement));
+//     }
+// }
+
+//sum of the array each array's first elements
 
 const array = [[1, 5, 8, 6, 8], [5, 2, 9], [8, 4], [5], [0, 0, 1]];
 
-for(let i=0; i < array.length ; i++){
+counter = 0;
 
-    if(array[i].length > 1) {
-        const firstElement = array[i][0];
-        const lastElement = array[i][[array[i].length - 1]]
+for(let i = 0 ; i < array.length ; i++) {
 
-        console.log(`${firstElement} + ${lastElement} = ` + (firstElement + lastElement));
+    if(array[i].length > 0) {
+        firstElement = array[i][0] ;
+        counter = counter + firstElement;
+
     }
+    
 }
+console.log(counter);
+
