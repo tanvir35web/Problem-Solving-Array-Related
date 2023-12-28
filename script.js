@@ -65,17 +65,28 @@
 // Find first item of every arrays.
 
 
-const array = [[1, 5, 8, 6], [5, 2, 9], [0, 4], [1], [0, 9],[77,0,99],[2.3,9]];
+// const array = [[1, 5, 8, 6], [5, 2, 9], [0, 4], [1], [0, 9],[77,0,99],[2.3,9]];
 
-for (let i = 0; i < array.length; i++) {
+// for (let i = 0; i < array.length; i++) {
   
-  if (array[i].length > 0) {
-    const firstElements = array[i][0]
-        console.log(firstElements);
+//   if (array[i].length > 0) {
+//     const firstElements = array[i][0]
+//         console.log(firstElements);
 
-    }
+//     }
    
-  }
+//   }
 
+// Sum of the array each array's first and last elements
 
+const array = [[1, 5, 8, 6, 8], [5, 2, 9], [8, 4], [5], [0, 0, 1]];
 
+for(let i=0; i < array.length ; i++){
+
+    if(array[i].length > 1) {
+        const firstElement = array[i][0];
+        const lastElement = array[i][[array[i].length - 1]]
+
+        console.log(`${firstElement} + ${lastElement} = ` + (firstElement + lastElement));
+    }
+}
